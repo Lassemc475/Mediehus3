@@ -1,0 +1,18 @@
+:root {
+    --colorContact: #00ffaa;
+}
+
+.bs-modal-body-margin {
+    margin-left: 1vmin;
+    margin-right: 1vmin;
+}
+
+.bs-input-group-addon {
+    background-color: var(--colorContact);
+}
+
+.bs-btn {
+    background-color: var(--colorContact); 
+}
+
+

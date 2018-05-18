@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    
+    <meta charset="utf-8"> 
+
+     <!-- Håndter devices med forskellige størrelser --> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Bootstrap CSS --> 
+    <link href="./resources/css/bootstrap.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+     <!-- CSS til styling af kontaktformular --> 
+    <link href="./resources/css/kontakt.css" rel="stylesheet" />
+
+    <title>Driver - kontakt</title>
+   
+</head> 
+    
+
+<body>
+    <!-- driver. bliver brugt til at afprøve kontaktformular -->
+    <div class="container">
+        <div class="row main">
+            <div class="panel-heading">
+               <div class="panel-title text-center">
+                       <h1 class="title">En af vores sider med en kontakt-knap</h1>
+                       <hr />
+                   </div>
+ 
+            </div> 
+
+        </div>
+    </div>
+
+   <!-- Kald til kontakt formular -->
+    <div class="form-group ">
+        <button type="button" <a href="#contact" data-toggle="modal">Kontakt</a></button>
+    </div>
+
+<!-- START Kontakt formular -->
+    <div class="modal fade" id="contact" role="dialog">
+    	<div class="modal-dialog">
+    		<div class="modal-content row-main">
+    			<form class="form-horizontal" role="form" method="post">
+    				<div class="modal-header">
+    					<h2>Jeg er klar til at løse dine xx-opgaver<h2>
+	    			</div>
+	    			<div class="modal-body bs-modal-body-margin">
+    					<div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Dit navn</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="bs-input-group-addon input-group-addon"><i class="fa fa-user fa"></i></span>
+                                    <input type="text" required class="form-control" name="name" id="name"  placeholder="Navn"/>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">E-mail</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="bs-input-group-addon input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="email" required class="form-control" name="email" id="email"  placeholder="E-mail adresse til mit svar"/>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="username" class="cols-sm-2 control-label">Meddelelse</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="bs-input-group-addon input-group-addon"><i class="fa fa-pencil fa" aria-hidden="true"></i></span>
+                                    <textarea required class="form-control" rows="5" name="usermsg" id="usermsg"  placeholder="Din besked"/></textarea>
+                                </div>
+                            </div>
+                        </div>
+	    			</div>
+	    			<div class="modal-footer">
+    					<a class="btn btn-default" data-dismiss="modal">Fortryd</a>
+    					<button type="submit" class="btn btn-primary bs-btn">Ja tak, det første skridt til en god løsning</button>
+                    </div>
+                    
+                    <div class="modal-footer">
+                            
+                            <h4>Din henvendelse sendes til: example@techcollge.dk</h4>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+    <!-- SLUT Kontakt formular -->
+    
+   
+
+       <!--JQUERY + JAVASRIPTS-->
+      
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+      
+       <script src="./resources/js/bootstrap.min.js"></script>
+
+
+   
+</body>
+</html>
+
